@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="./src/img/Software_DevSchool_azul.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Software DevSchool - Criar conta</title>
+    <link rel="stylesheet" href="./css/criarconta.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="./inicio.html"><img src="./src/img/Software_DevSchool.png" alt="Software DevSchool"></a>
+        </div>
+        <div class="menu">
+            <a href="./inicio.html">Inicio</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./dev.html">Quem somos</a>
+            <a href="./login.html"><button type="button" class="btn btn-warning">Entrar</button></a>
+        </div>
+    </header>
+    <div class="botaodark">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+    <div class="container mt-5 mb-5 ">
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="logo-forms">
+                        <img src="./src/img/Software_DevSchool_azulcortada.png" alt="">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <br>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Senha</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="inputAddress2">Complemento</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartamento, hotel, casa, etc.">
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Cidade</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <br>
+                        <div class="form-group col-md-4">
+                            <label for="inputEstado">Estado</label>
+                            <select id="inputEstado" class="form-control">
+                                <option selected>Escolher...</option>
+                                <option>RJ</option>
+                                <option>SP</option>
+                                <option>BA</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-group col-md-2">
+                            <label for="inputCEP">CEP</label>
+                            <input type="text" class="form-control" id="inputCEP">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Assinaturas</label>
+                    </div>
+
+                    <!-- Opção de assinatura 1 -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="assinatura" id="assinatura1"
+                            value="assinatura1">
+                        <label class="form-check-label" for="assinatura1">
+                            Assinatura 1: R$ 50/mês - Para assinantes de categoria básica.
+                        </label>
+                    </div>
+
+                    <!-- Opção de assinatura 2 -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="assinatura" id="assinatura2"
+                            value="assinatura2">
+                        <label class="form-check-label" for="assinatura2">
+                            Assinatura 2: R$ 75/mês - Para assinantes de categoria intermediária.
+                        </label>
+                    </div>
+
+                    <!-- Opção de assinatura 3 -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="assinatura" id="assinatura3"
+                            value="assinatura3">
+                        <label class="form-check-label" for="assinatura3">
+                            Assinatura 3 : R$ 100/mês - Para alunos de categoria avançada.
+                        </label>
+                    </div>
+
+                    <hr>
+
+                    <div class="form-group">
+                        <label>Formas de Pagamento</label>
+                    </div>
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formaPagamento" id="cartaoCredito"
+                            value="cartaoCredito">
+                        <label class="form-check-label" for="cartaoCredito">
+                            Cartão de Crédito
+                        </label>
+                    </div>
+
+
+                    <div id="infoCartao" style="display: none;">
+                        <div class="form-group">
+                            <label for="numeroCartao">Número do Cartão</label>
+                            <input type="text" class="form-control" id="numeroCartao" placeholder="Número do Cartão">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="validadeCartao">Validade</label>
+                                <input type="text" class="form-control" id="validadeCartao" placeholder="MM/AA">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="cvvCartao">CVV</label>
+                                <input type="text" class="form-control" id="cvvCartao" placeholder="CVV">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opção de pagamento com PayPal -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formaPagamento" id="paypal" value="paypal">
+                        <label class="form-check-label" for="paypal">
+                            PayPal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formaPagamento" id="paypal" value="paypal">
+                        <label class="form-check-label" for="paypal">
+                            Boleto
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formaPagamento" id="paypal" value="paypal">
+                        <label class="form-check-label" for="paypal">
+                            Pix
+                        </label>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Assinar plano</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="btnTop">
+        <i class="arrow up"></i>
+    </div>
+    <footer class="rodape">
+        <p>&copy; Software DevSchool.</p>
+        <div>
+            <a class="quemsomos" href="./faleconosco.html">FALE CONOSCO</a>
+            <p>TERMOS DE USO</p>
+            <p>POLITICAS DE PRIVACIDADE</p>
+        </div>
+    </footer>
+    <script src="js/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer> </script>
+
+</html>

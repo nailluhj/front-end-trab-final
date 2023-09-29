@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="./src/img/Software_DevSchool_azul.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/pagedoscursos.css">
+    <title>Software DevSchool - Desenvolvimento Web</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="./inicio.html"><img src="./src/img/Software_DevSchool.png" alt="Software DevSchool"></a>
+        </div>
+        <div class="menu">
+            <a href="./inicio.html">Inicio</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./dev.html">Quem somos</a>
+            <a href="./login.html"><button type="button" class="btn btn-warning">Entrar</button></a>
+        </div>
+    </header>
+    <div class="botaodark">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div><br>
+    <section class="marca">
+        <div class="container">
+            <div class="intro">
+                <h1>Desenvolvedor Web</h1>
+                <p>
+                    Bem-vindo ao Curso de Desenvolvedor Web! Neste curso, você mergulhará no 
+                    mundo emocionante do desenvolvimento web,
+                    aprendendo as habilidades essenciais para criar e aprimorar 
+                    páginas web de maneira profissional.
+                </p>
+            </div>
+            <div class="mainContainer">
+                <div class="left">
+                    <div>
+                        <h3><span class="textolaranja">Módulo 1</span>: Fundamentos da Web</h3>
+                        <ul>
+                            <li>O que é a web e como funciona.</li>
+                            <li>Introdução às linguagens web: HTML, CSS e JavaScript.</li>
+                            <li>Estrutura básica de uma página HTML.</li>
+                        </ul>
+                    </div>
+                    <div class="paragrafos">
+                        <h3><span class="textolaranja">Módulo 2</span>: Estilização com CSS</h3>
+                        <ul>
+                            <li>Introdução ao CSS e sua importância.</li>
+                            <li>Sintaxe básica do CSS: seletores, propriedades e valores.</li>
+                            <li>Como incorporar CSS em páginas web: estilos inline, internos e externos.</li>
+                        </ul>
+                    </div>
+                    <div class="paragrafos">
+                        <h3><span class="textolaranja">Módulo 3</span>: Layout e Posicionamento</h3>
+                        <ul>
+                            <li>Modelo de caixa CSS: conteúdo, margens, bordas e preenchimento.</li>
+                            <li>Posicionamento de elementos: absoluto, relativo e fixo.</li>
+                            <li>Layouts flexíveis e de grade para designs responsivos.</li>
+                        </ul>
+                    </div>
+                    <div class="paragrafos">
+                        <h3><span class="textolaranja">Módulo 4</span>: Interatividade com JavaScript</h3>
+                        <ul>
+                            <li>Introdução ao JavaScript e seu papel na web.</li>
+                            <li>Manipulação do DOM: interagindo com elementos da página.</li>
+                            <li>Eventos e funções JavaScript para criar interações dinâmicas.</li>
+                        </ul>
+                    </div>
+                    <div class="paragrafos">
+                        <h3><span class="textolaranja">Módulo 5</span>:  Design Responsivo</h3>
+                        <ul>
+                            <li>Criando páginas responsivas para dispositivos móveis e desktop.</li>
+                            <li>Utilização de media queries para personalizar estilos conforme o tamanho da tela.</li>
+                            <li>Estratégias para layouts flexíveis e amigáveis aos dispositivos móveis.</li>
+                        </ul>
+                    </div>
+                    <div class="paragrafos">
+                        <h3><span class="textolaranja">Módulo 6</span>:Otimização e Boas Práticas</h3>
+                        <ul>
+                            <li>Organização de código CSS e JavaScript.</li>
+                            <li>Ferramentas de desenvolvimento para depuração e otimização.</li>
+                            <li>Melhorias de desempenho: reduzindo carga e tempo de renderização.</li>
+                        </ul>
+                    </div>
+                    <div class="paragrafos">
+                        <h3><span class="textolaranja">Módulo 7</span>: Projeto Prático</h3>
+                        <ul>
+                            <li>Aplicação de todas as habilidades aprendidas em um projeto prático.</li>
+                            <li>Desenvolvimento de um site completo e interativo.</li>
+                            <li>Avaliação e revisão do projeto para refinamentos finais.</li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <div class="imdev1">
+                    <img src="./src/img/dvweb1.jpeg" width="500px" alt="devImage"><br><br>
+                    <img id="eae" width="500px" src="./src/img/dvweb2.jpeg" alt="imagem dev"><br><br>
+                    <img src="./src/img/dvweb3.jpeg" width="500px" alt="devIcon">
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <button class="btn btn-secondary position-absolute top-6 end-0 m-3" id="alterarTemaSite"
+        onclick="alterarTemaSite()"><i class="bi bi-toggle-on"></i></button>
+
+    <div id="btnTop">
+        <i class="arrow up"></i>
+    </div>
+
+    <footer class="rodape">
+        <p>&copy; Software DevSchool.</p>
+        <div>
+            <a class="quemsomos" href="./faleconosco.html">FALE CONOSCO</a>
+            <p>TERMOS DE USO</p>
+            <p>POLITICAS DE PRIVACIDADE</p>
+        </div>
+    </footer>
+    <script src="./js/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
